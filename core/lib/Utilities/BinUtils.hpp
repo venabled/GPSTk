@@ -60,6 +60,10 @@
 #define LITTLE_ENDIAN 1
 #define BIG_ENDIAN 0
 #define BYTE_ORDER LITTLE_ENDIAN
+#elif __ANDROID__
+#define LITTLE_ENDIAN 1
+#define BIG_ENDIAN 0
+#define BYTE_ORDER LITTLE_ENDIAN
 #else
 #error "Platform doesn't support BYTE_ORDER?"
 #endif
