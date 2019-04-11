@@ -36,7 +36,7 @@
 
 
 #include <BasicFramework.hpp>
-#include <CommonTime.hpp>
+#include "CommonTime.hpp"
 #include <CommandOptionWithCommonTimeArg.hpp>
 
 using namespace std;
