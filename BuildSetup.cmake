@@ -7,10 +7,13 @@
 #----------------------------------------
 # Shared(Dynamic) vs. Static libraries
 #----------------------------------------
-if( UNIX )
+if( BUILD_SHARED_LIBS )
     set( STADYN "SHARED" )
+    message(STATUS "Building Shared Libs")
 elseif( WIN32 )
     set( STADYN "STATIC" )
+else()
+    message(STATUS "Building Static Libs")
 endif()
 
 
